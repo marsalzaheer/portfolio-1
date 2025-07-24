@@ -1,0 +1,1317 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* NAVBAR */
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  color: #8fbc8f;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 22px;
+  padding: 1.2rem 2rem;
+}
+
+.nav-list :hover {
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+}
+
+a {
+  text-decoration: none;
+  color: #8fbc8f;
+}
+
+/* WELCOME SECTION */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  margin-top: 35px 0;
+}
+
+.profile-pic {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+}
+
+.profile-pic :hover {
+  transform: scale(0.85);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition-duration: 5s;
+}
+
+.profile-pic img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-section h1 {
+  color: #8fbc8f;
+  margin-top: 10px;
+  font-size: 65px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.welcome-section p {
+  font-style: italic;
+  color: #8fbc8f;
+}
+
+/* PROJRCTS SECTION */
+
+/* WORDPRESS PROJECTS SECTION */
+
+.wordpress-projects-section {
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.wordpress-projects-section #wordpress-projects-section-header {
+  color: #8fbc8f;
+  padding-top: 7rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.wordpress-projects-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  padding: 3rem 5rem 5rem 5rem;
+  height: 130vh;
+  gap: 20px;
+}
+
+.wordpress-projects-flexbox .wordpress-projects {
+  text-align: center;
+  max-height: 500px;
+  height: 100%;
+  max-width: 45%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wordpress-projects .wordpress-project-title {
+  color: #8fbc8f;
+}
+
+.wordpress-projects .wordpress-project-image {
+  height: calc(100% - 6.8rem);
+  width: 90%;
+  object-fit: cover;
+  margin-top: 35px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for image and title within each project */
+.wordpress-projects-flexbox .wordpress-projects:hover .wordpress-project-image {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.wordpress-projects-flexbox .wordpress-projects:hover .wordpress-project-title {
+  transform: scale(1.1);
+}
+
+/* Transition effects for smoother animation */
+.wordpress-projects .wordpress-project-image,
+.wordpress-projects .wordpress-project-title {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Optional hover effect on the entire div if needed */
+.wordpress-projects-flexbox .wordpress-projects:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.wordpress-projects-section .btn-show-all {
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  color: #8fbc8f;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, color 0.3s ease;
+}
+
+.wordpress-projects-section .btn-show-all:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* HTML CSS PROJECTS SECTION */
+
+.html-css-projects-section {
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.html-css-projects-section #html-css-projects-section-header {
+  color: #8fbc8f;
+  padding-top: 7rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.html-css-projects-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  padding: 3rem 5rem 5rem 5rem;
+  height: 130vh;
+  gap: 20px;
+}
+
+.html-css-projects-flexbox .html-css-projects {
+  text-align: center;
+  max-height: 500px;
+  height: 100%;
+  max-width: 45%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.html-css-projects .html-css-project-title {
+  color: #8fbc8f;
+}
+
+.html-css-projects .html-css-project-image {
+  height: calc(100% - 6.8rem);
+  width: 90%;
+  object-fit: cover;
+  margin-top: 35px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for image and title within each project */
+.html-css-projects-flexbox .html-css-projects:hover .html-css-project-image {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.html-css-projects-flexbox .html-css-projects:hover .html-css-project-title {
+  transform: scale(1.1);
+}
+
+/* Transition effects for smoother animation */
+.html-css-projects .html-css-project-image,
+.html-css-projects .html-css-project-title {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Optional hover effect on the entire div if needed */
+.html-css-projects-flexbox .html-css-projects:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.html-css-projects-section .btn-show-all {
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  color: #8fbc8f;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, color 0.3s ease;
+}
+
+.html-css-projects-section .btn-show-all:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* JAVASCRIPT PROJECTS SECTION */
+
+.js-projects-section {
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.js-projects-section #js-projects-section-header {
+  color: #8fbc8f;
+  padding-top: 7rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.js-projects-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  padding: 3rem 5rem 5rem 5rem;
+  height: 130vh;
+  gap: 20px;
+}
+
+.js-projects-flexbox .js-projects {
+  text-align: center;
+  max-height: 500px;
+  height: 100%;
+  max-width: 45%;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.js-projects .js-project-title {
+  color: #8fbc8f;
+}
+
+.js-projects .js-project-image {
+  height: calc(100% - 6.8rem);
+  width: 90%;
+  object-fit: cover;
+  margin-top: 35px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for image and title within each project */
+.js-projects-flexbox .js-projects:hover .js-project-image {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.js-projects-flexbox .js-projects:hover .js-project-title {
+  transform: scale(1.1);
+}
+
+/* Transition effects for smoother animation */
+.js-projects .js-project-image,
+.js-projects .js-project-title {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Optional hover effect on the entire div if needed */
+.js-projects-flexbox .js-projects:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.js-projects-section .btn-show-all {
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  color: #8fbc8f;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.85);
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, color 0.3s ease;
+}
+
+.js-projects-section .btn-show-all:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTACT ME SECTION */
+
+.contact-section {
+  background-image: linear-gradient(135deg, #d0f4de, #d9e4f5, #f4d9e2, #fff3b0);
+  color: #8fbc8f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 85vh;
+  padding: 0 2rem;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.4);
+}
+
+.contact-section-header h2 {
+  font-size: 4rem;
+  color: #8fbc8f;
+}
+
+.contact-section-header p {
+  color: #8fbc8f;
+  font-style: italic;
+}
+
+.contact-links .contact-details {
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  color: #8fbc8f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-links .contact-details:hover {
+  transform: translateY(8px);
+}
+
+.contact-links a {
+  color: #8fbc8f;
+}
+
+.contact-links .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+/* 
+FOOTER */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e6e6fa, #fabffa, #ffb6c1, #fffacd);
+  color: #8fbc8f;
+}
+
+footer .line {
+  font-size: 1.75rem;
+  margin-right: 2rem;
+}
+
+footer .copyright {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes animatation-1 {
+  0% {
+    background-color: #f5f5f5;
+  }
+  25% {
+    background-color: #b0dff7;
+  }
+  50% {
+    background-color: #b8e5d9;
+  }
+  75% {
+    background-color: #f4d9e2;
+  }
+  100% {
+    background-color: #f5f5f5;
+  }
+}
+
+@keyframes animatation-2 {
+  0% {
+    background-color: #778899;
+  }
+  25% {
+    background-color: #4682b4;
+  }
+  50% {
+    background-color: #36454f;
+  }
+  75% {
+    background-color: #8fbc8f;
+  }
+  100% {
+    background-color: #778899;
+  }
+}
+
+@keyframes animate-text2 {
+  0% {
+    color: #e6e6fa;
+  }
+  25% {
+    color: #dda0dd;
+  }
+  50% {
+    color: #ffb6c1;
+  }
+  75% {
+    color: #fffacd;
+  }
+  100% {
+    color: #e6e6fa;
+  }
+}
+
+@keyframes animate-text {
+  0% {
+    color: #778899;
+  }
+  25% {
+    color: #4682b4;
+  }
+  50% {
+    color: #36454f;
+  }
+  75% {
+    color: #8fbc8f;
+  }
+  100% {
+    color: #778899;
+  }
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 85px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 16px;
+    padding: 1.5rem 0.75rem;
+  }
+
+  /* WELCOME SECTION */
+
+  .welcome-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 35px 0;
+  }
+
+  .profile-pic {
+    margin-top: 4rem;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+
+  .profile-pic img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .welcome-section h1 {
+    margin-top: 15px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  /* PROJRCTS SECTION */
+
+  /* WORDPRESS PROJECTS SECTION */
+
+  .wordpress-projects-section {
+    text-align: center;
+  }
+
+  .wordpress-projects-section #wordpress-projects-section-header {
+    padding-top: 7rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .wordpress-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 20px;
+  }
+
+  .wordpress-projects-flexbox .wordpress-projects {
+    text-align: center;
+    max-height: 600px;
+    height: 100%;
+    max-width: 95%;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .wordpress-projects .wordpress-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 35px;
+  }
+
+  /* HTML CSS PROJECTS SECTION */
+
+  .html-css-projects-section {
+    text-align: center;
+  }
+
+  .html-css-projects-section #html-css-projects-section-header {
+    padding-top: 7rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .html-css-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 20px;
+  }
+
+  .html-css-projects-flexbox .html-css-projects {
+    text-align: center;
+    max-height: 600px;
+    height: 100%;
+    max-width: 95%;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .html-css-projects .html-css-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 35px;
+  }
+
+  /* JAVASCRIPT PROJECTS SECTION */
+
+  .js-projects-section {
+    text-align: center;
+  }
+
+  .js-projects-section #js-projects-section-header {
+    padding-top: 7rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .js-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 20px;
+  }
+
+  .js-projects-flexbox .js-projects {
+    text-align: center;
+    max-height: 600px;
+    height: 100%;
+    max-width: 95%;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .js-projects .js-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 35px;
+  }
+
+  /* CONTACT ME SECTION */
+
+  .contact-section {
+    height: 85vh;
+    padding: 0 2rem;
+  }
+
+  .contact-section-header h2 {
+    font-size: 3rem;
+  }
+
+  .contact-section-header p {
+    margin-top: 1rem;
+  }
+
+  .contact-links .contact-details {
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .contact-links .btn {
+    padding: 0 2rem;
+  }
+
+  /* 
+  FOOTER */
+
+  footer {
+    padding: 1rem 2rem;
+  }
+
+  footer .line {
+    font-size: 1.25rem;
+    margin-right: 2rem;
+  }
+
+  footer .copyright {
+    font-size: 0.95rem;
+    margin-left: 2rem;
+  }
+}
+
+/* Specific for smaller mobile devices */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 85px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 13px;
+    padding: 1.85rem 0.4rem;
+  }
+
+  /* WELCOME SECTION */
+
+  .welcome-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 35px 0;
+  }
+
+  .profile-pic {
+    margin-top: 4rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .profile-pic img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .welcome-section h1 {
+    margin-top: 15px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  /* PROJRCTS SECTION */
+
+  /* WORDPRESS PROJECTS SECTION */
+
+  .wordpress-projects-section {
+    text-align: center;
+  }
+
+  .wordpress-projects-section #wordpress-projects-section-header {
+    padding: 7rem 2rem 0 2rem;
+    font-size: 30px;
+    line-height: 1.3;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .wordpress-projects-flexbox {
+    padding: 3rem 2rem 5rem 2rem;
+    height: auto;
+    gap: 20px;
+  }
+
+  .wordpress-projects-flexbox .wordpress-projects {
+    text-align: center;
+    max-height: 600px;
+    height: 100%;
+    max-width: 95%;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .wordpress-projects .wordpress-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  /* HTML CSS PROJECTS SECTION */
+
+  .html-css-projects-section {
+    text-align: center;
+  }
+
+  .html-css-projects-section #html-css-projects-section-header {
+    padding: 7rem 2rem 0 2rem;
+    font-size: 30px;
+    line-height: 1.3;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .html-css-projects-flexbox {
+    padding: 3rem 2rem 5rem 2rem;
+    height: auto;
+    gap: 20px;
+  }
+
+  .html-css-projects-flexbox .html-css-projects {
+    text-align: center;
+    max-height: 600px;
+    height: 100%;
+    max-width: 95%;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .html-css-projects .html-css-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  /* JAVASCRIPT PROJECTS SECTION */
+
+  .js-projects-section {
+    text-align: center;
+  }
+
+  .js-projects-section #js-projects-section-header {
+    padding: 7rem 2rem 0 2rem;
+    font-size: 30px;
+    line-height: 1.3;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .js-projects-flexbox {
+    padding: 3rem 2rem 5rem 2rem;
+    height: auto;
+    gap: 20px;
+  }
+
+  .js-projects-flexbox .js-projects {
+    text-align: center;
+    max-height: 600px;
+    height: 100%;
+    max-width: 95%;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .js-projects .js-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  /* CONTACT ME SECTION */
+
+  .contact-section {
+    height: 85vh;
+    padding: 0 2rem;
+  }
+
+  .contact-section-header h2 {
+    font-size: 2.25rem;
+  }
+
+  .contact-section-header p {
+    margin-top: 1rem;
+  }
+
+  .contact-links .contact-details {
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .contact-links .btn {
+    padding: 0 2rem;
+  }
+
+  /* 
+  FOOTER */
+
+  footer {
+    padding: 1rem 2rem;
+  }
+
+  footer .line {
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+
+  footer .copyright {
+    font-size: 0.75rem;
+    margin-left: 2rem;
+  }
+}
+
+/* Tablet responsiveness */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  /* NAVBAR */
+
+  .nav {
+    width: 100%;
+    height: 85px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 20px;
+    padding: 1.15rem 2rem;
+  }
+
+  /* WELCOME SECTION */
+
+  .welcome-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 35px 0;
+  }
+
+  .profile-pic {
+    margin-top: 30px;
+    width: 360px;
+    height: 360px;
+  }
+
+  .profile-pic img {
+    width: 310px;
+    height: 310px;
+  }
+
+  .welcome-section h1 {
+    margin-top: 10px;
+    font-size: 53px;
+    text-align: center;
+  }
+
+  /* PROJRCTS SECTION */
+
+  /* WORDPRESS PROJECTS SECTION */
+
+  .wordpress-projects-section #wordpress-projects-section-header {
+    padding-top: 7rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .wordpress-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 30px;
+  }
+
+  .wordpress-projects-flexbox .wordpress-projects {
+    text-align: center;
+    height: 450px;
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .wordpress-projects .wordpress-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 350px;
+    margin-top: 35px;
+  }
+
+  /* HTML CSS PROJECTS SECTION */
+
+  .html-css-projects-section {
+    text-align: center;
+  }
+
+  .html-css-projects-section #html-css-projects-section-header {
+    padding-top: 7rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .html-css-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 30px;
+  }
+
+  .html-css-projects-flexbox .html-css-projects {
+    text-align: center;
+    height: 450px;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .html-css-projects .html-css-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 350px;
+    margin-top: 35px;
+  }
+
+  /* JAVASCRIPT PROJECTS SECTION */
+
+  .js-projects-section {
+    text-align: center;
+  }
+
+  .js-projects-section #js-projects-section-header {
+    padding-top: 7rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .js-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 30px;
+  }
+
+  .js-projects-flexbox .js-projects {
+    text-align: center;
+    height: 450px;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .js-projects .js-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 350px;
+    margin-top: 35px;
+  }
+
+  /* CONTACT ME SECTION */
+
+  .contact-section {
+    height: 85vh;
+    padding: 0 2rem;
+  }
+
+  .contact-section-header h2 {
+    font-size: 3.5rem;
+  }
+
+  .contact-section-header p {
+    margin-top: 1rem;
+  }
+
+  .contact-links .contact-details {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .contact-links .btn {
+    padding: 0 2rem;
+  }
+
+  /* 
+  FOOTER */
+
+  footer {
+    padding: 1rem 2rem;
+  }
+
+  footer .line {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+
+  footer .copyright {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+  body {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  /* NAVBAR */
+
+  .nav {
+    width: 100%;
+    height: 85px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 0;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 20px;
+    padding: 1.15rem 2rem;
+  }
+
+  /* WELCOME SECTION */
+
+  .welcome-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 35px 0;
+  }
+
+  .profile-pic {
+    margin-top: 30px;
+    width: 380px;
+    height: 380px;
+  }
+
+  .profile-pic img {
+    width: 330px;
+    height: 330px;
+  }
+
+  .welcome-section h1 {
+    margin-top: 10px;
+    font-size: 53px;
+    text-align: center;
+  }
+
+  /* PROJRCTS SECTION */
+
+  /* WORDPRESS PROJECTS SECTION */
+
+  .wordpress-projects-section #wordpress-projects-section-header {
+    padding-top: 7rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .wordpress-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 30px;
+  }
+
+  .wordpress-projects-flexbox .wordpress-projects {
+    text-align: center;
+    height: 450px;
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .wordpress-projects .wordpress-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 350px;
+    margin-top: 35px;
+  }
+
+  /* HTML CSS PROJECTS SECTION */
+
+  .html-css-projects-section {
+    text-align: center;
+  }
+
+  .html-css-projects-section #html-css-projects-section-header {
+    padding-top: 7rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .html-css-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 30px;
+  }
+
+  .html-css-projects-flexbox .html-css-projects {
+    text-align: center;
+    height: 450px;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .html-css-projects .html-css-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 350px;
+    margin-top: 35px;
+  }
+
+  /* JAVASCRIPT PROJECTS SECTION */
+
+  .js-projects-section {
+    text-align: center;
+  }
+
+  .js-projects-section #js-projects-section-header {
+    padding-top: 7rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .js-projects-flexbox {
+    padding: 3rem 5rem 5rem 5rem;
+    height: auto;
+    gap: 30px;
+  }
+
+  .js-projects-flexbox .js-projects {
+    text-align: center;
+    height: 450px;
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .js-projects .js-project-image {
+    width: 90%;
+    object-fit: cover;
+    height: 350px;
+    margin-top: 35px;
+  }
+
+  /* CONTACT ME SECTION */
+
+  .contact-section {
+    height: 85vh;
+    padding: 0 2rem;
+  }
+
+  .contact-section-header h2 {
+    font-size: 3.5rem;
+  }
+
+  .contact-section-header p {
+    margin-top: 1rem;
+  }
+
+  .contact-links .contact-details {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .contact-links .btn {
+    padding: 0 2rem;
+  }
+
+  /* 
+  FOOTER */
+
+  footer {
+    padding: 1rem 2rem;
+  }
+
+  footer .line {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+
+  footer .copyright {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+}

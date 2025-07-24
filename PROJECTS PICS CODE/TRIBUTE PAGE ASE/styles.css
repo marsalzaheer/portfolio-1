@@ -1,0 +1,103 @@
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #C3E0F8, #E7F0C4, #F7C6C7);
+    line-height: 1.6;
+    text-align: center;
+    color: #4A4A4A;
+  }
+
+  #main {
+    background: linear-gradient(to right, #B2B2B2, #E3E3E3, #FFFFFF);
+    margin: 30px 15px;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    padding-top: 40px;
+    font-weight: bold;
+    color: #3E2723;
+  }
+
+ #top {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #img-div {
+    margin: 15px;
+    padding-top: 18px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #D0D0D0, #F0F0F0, #FFFFFF);
+  }
+
+  #img-caption {
+    margin-top: 10px;
+   padding-bottom: 18px;
+  }
+
+  #image {
+    border-radius: 5px;
+    object-fit: contain;
+  }
+
+
+  h3 {
+    font-size: 1.17rem;
+    color: #3E2723;
+    margin: 50px 0;
+    font-weight: bold;
+  }
+
+  section {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+
+  ul {
+    width: 550px; /* Define a fixed or percentage width */
+    text-align: left;
+    line-height: 1.6;
+    margin: 0 auto; /* This will center the ul horizontally */
+  }
+
+  ul li {
+    margin-bottom: 20px;
+  }
+
+  #last {
+    max-width: 550px;
+    margin: 50px auto 10px auto;
+    text-align: left;
+  }
+
+  #name {
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  #link-text {
+    padding-bottom: 45px;
+  }
+
+  a {
+    color: #6B8E23; /* Link color */
+  }
+
+  a:hover {
+    color: #FFD700; /* Link hover color */
+  }
+
+ 
